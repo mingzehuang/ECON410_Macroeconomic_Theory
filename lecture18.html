@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Mingze Huang" />
-  <meta name="date" content="2021-08-03" />
+  <meta name="date" content="2021-08-04" />
   <title>Lecture 18: Long Run Economic Growth</title>
   <style type="text/css">
     code{white-space: pre-wrap;}
@@ -28,10 +28,14 @@
   <p class="author">
 Mingze Huang
   </p>
-  <p class="date">2021-08-03</p>
+  <p class="date">2021-08-04</p>
 </div>
 <div id="aggregate-production-function" class="slide section level2">
 <h1>Aggregate Production Function</h1>
+<p>In short run IS-LM model, we discuss the short run effects of demand side shocks (fiscal policy and monetary policy).</p>
+<p>In medium run AS-AD model, we extend our analysis to supply side shocks (labor market condition and goods market competition).</p>
+<p>There’s still one place we haven’t touch too much yet - the production function.</p>
+<p>When we look back economic growth path for many countries, it’s hard to say that long run economic growth is driven by some temporary demand or supply shocks. <a href="https://ourworldindata.org/grapher/real-gdp-per-capita-pennwt?country=DEU~USA~CHN~IND~GTM~BRA~VEN~NGA">1950-2017</a></p>
 <p>Recall the simplified version of production function we introduced before: <span class="math inline">\(Y^{r}=N\)</span>.</p>
 <p>Now we extend our analysis to two inputs: capital <span class="math inline">\(K\)</span> and labor <span class="math inline">\(N\)</span>: <span class="math display">\[
 Y=F(K, N)
@@ -39,21 +43,71 @@ Y=F(K, N)
 <ul>
 <li>Real Output <span class="math inline">\(Y^{r}\)</span> is a function <span class="math inline">\(F(\cdot)\)</span> of capital <span class="math inline">\(K\)</span> and labor <span class="math inline">\(N\)</span>. The function <span class="math inline">\(F(\cdot)\)</span> determined by <strong>state of technology</strong>.</li>
 </ul>
+</div>
+<div id="growth-in-output-per-worker" class="slide section level2">
+<h1>Growth in Output per Worker</h1>
 <p>Returns to scale and returns to factors</p>
 <ul>
 <li><p><strong>Constant returns to scale</strong>: if the scale of operation is doubled - that is, if the quantities of capital and labor are doubled - then output will also double: <span class="math inline">\(2Y=F(2K, 2N)\)</span>. Or more generally, for any number <span class="math inline">\(x\)</span>: <span class="math inline">\(xY=F(xK, xN)\)</span>.</p></li>
 <li><p><strong>Decreasing returns to capital</strong>: Given labor input unchanged, the increase in capital input will lead to smaller and smaller increases in output as the level of capital input increases.</p></li>
 <li><p><strong>Decreasing returns to labor</strong>: Given capital input unchanged, the increase in labor input will lead to smaller and smaller increases in output as the level of labor input increases.</p></li>
 </ul>
-</div>
-<div id="aggregate-production-function-1" class="slide section level2">
-<h1>Aggregate Production Function</h1>
 <p>By constant returns to scale <span class="math inline">\(xY=F(xK, xN)\)</span>, let <span class="math inline">\(x=\frac{1}{N}\)</span>, we have: <span class="math display">\[
 \frac{Y}{N}=F(\frac{K}{N},\frac{N}{N})=F(\frac{K}{N}, 1)
 \]</span></p>
 <ul>
-<li><span class="math inline">\(\frac{Y}{N}\)</span> is output per worker, <span class="math inline">\(\frac{K}{N}\)</span> is capital per worker.</li>
+<li><p><span class="math inline">\(\frac{Y}{N}\)</span> is output per worker, <span class="math inline">\(\frac{K}{N}\)</span> is capital per worker.</p></li>
+<li><p>Now we’ve convert capital into capital per worker <span class="math inline">\(\frac{K}{N}\)</span> and hold labor as constant <span class="math inline">\(1\)</span>. Since we assume <strong>decreasing return to capital</strong>, the increase in capital per worker <span class="math inline">\(\frac{K}{N}\)</span> will lead to smaller and smaller increases in output as the level of capital per worker increases.</p></li>
 </ul>
+</div>
+<div id="the-source-of-growth" class="slide section level2">
+<h1>The source of growth</h1>
+<p><img src="growth.png" /></p>
+<ul>
+<li><p>Increases in output per worker <span class="math inline">\(\frac{Y}{N}\)</span> may come from increase in capital per worker <span class="math inline">\(\frac{K}{N}\)</span>. This is so-called <strong>capital accumulation</strong>.</p></li>
+<li><p>Increases in output per worker <span class="math inline">\(\frac{Y}{N}\)</span> may come from improvement of state of technology (e.g. <span class="math inline">\(F(\cdot)\)</span> to <span class="math inline">\(F(\cdot)&#39;\)</span>. This is so-called <strong>technological progress</strong>.</p></li>
+</ul>
+</div>
+<div id="the-effects-of-capital-on-output" class="slide section level2">
+<h1>The Effects of Capital on Output</h1>
+<p><img src="growth2.png" /></p>
+<p>To simplify notation, we’ll rewrite the relation as: <span class="math display">\[
+\frac{Y}{N}=f(\frac{K}{N})\equiv F(\frac{K}{N}, 1)
+\]</span></p>
+</div>
+<div id="the-effects-of-output-on-capital-accumulation" class="slide section level2">
+<h1>The Effects of Output on Capital Accumulation</h1>
+<p>In year <span class="math inline">\(t\)</span>: <span class="math display">\[\frac{Y_{t}}{N}=f(\frac{K_{t}}{N})\]</span></p>
+<p><img src="growth3.png" /></p>
+<p>Recall in Lecture 4, we discussed composition of GDP (Y), and we get the <strong>IS-relation</strong> as below:</p>
+<ul>
+<li><p>In equilibrium, investment always equal to saving: <span class="math inline">\(I=S+(T-G)\)</span>. This is so called <strong>IS relation</strong>.</p></li>
+<li><p>To make the long run model simple enough, let’s ignore <span class="math inline">\((T-G)\)</span> so that we have <span class="math inline">\(I=S\)</span>.</p></li>
+</ul>
+</div>
+<div id="investment-and-capital-accumulation" class="slide section level2">
+<h1>Investment and Capital Accumulation</h1>
+<p>Assume that private saving is proportional to income: <span class="math inline">\(S=s\cdot Y\)</span></p>
+<ul>
+<li><span class="math inline">\(s\)</span> is saving rate (<span class="math inline">\(0&lt;s&lt;1\)</span>).</li>
+</ul>
+<p>Combine <span class="math inline">\(I=S\)</span> and <span class="math inline">\(S=s\cdot Y\)</span>, in year <span class="math inline">\(t\)</span> we have: <span class="math inline">\(I_{t}=s\cdot Y_{t}\)</span>.</p>
+<p>Investment is proportional to output: higher output implies higher saving, then higher investment.</p>
+<p>The evolution of capital stock is given by: <span class="math inline">\(K_{t+1}=(1-\delta)K_{t}+I_{t}\)</span>.</p>
+<p>Substitute <span class="math inline">\(I_{t}\)</span> by <span class="math inline">\(I_{t}=s\cdot Y_{t}\)</span> and divide both sides by <span class="math inline">\(N\)</span>: <span class="math inline">\(\frac{K_{t+1}}{N}=(1-\delta)\frac{K_{t}}{N}+s\frac{Y_{t}}{N}\)</span>.</p>
+<p>Rearrange it: <span class="math inline">\(\frac{K_{t+1}}{N}-\frac{K_{t}}{N}=s\frac{Y_{t}}{N}-\delta\frac{K_{t}}{N}\)</span>.</p>
+<p>Plug <span class="math inline">\(\frac{Y_{t}}{N}=f(\frac{K_{t}}{N})\)</span> in: <span class="math display">\[
+\frac{K_{t+1}}{N}-\frac{K_{t}}{N}=s\cdot f(\frac{K_{t}}{N})-\delta\frac{K_{t}}{N}
+\]</span></p>
+</div>
+<div id="investment-and-capital-accumulation-1" class="slide section level2">
+<h1>Investment and Capital Accumulation</h1>
+<ul>
+<li><p>The left hand side <span class="math inline">\(\frac{K_{t+1}}{N}-\frac{K_{t}}{N}\)</span> is change in capital from year <span class="math inline">\(t\)</span> to year <span class="math inline">\(t+1\)</span>.</p></li>
+<li><p>The first term of right hand side <span class="math inline">\(s\cdot f(\frac{K_{t}}{N})\)</span> is investment during year <span class="math inline">\(t\)</span>.</p></li>
+<li><p>The second term of right hand side <span class="math inline">\(\delta\frac{K_{t}}{N}\)</span> is depreciation during year <span class="math inline">\(t\)</span>.</p></li>
+</ul>
+<p>So the change in capital from year <span class="math inline">\(t\)</span> to year <span class="math inline">\(t+1\)</span> equals to investment during year <span class="math inline">\(t\)</span> minus depreciation during year <span class="math inline">\(t\)</span>.</p>
 </div>
 
   <!-- dynamically load mathjax for compatibility with self-contained -->
